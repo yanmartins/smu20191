@@ -42,7 +42,7 @@ Se quiser, `make show` apresenta o estado do Terraform.
 ## Destruir o ambiente
 Somente `make clean`. Nada mais.
 
-# OpenSIPS
+# SIP Proxy: OpenSIPS
 Para controlar o OpenSIPS, uma sugestão é que seja feito via systemd. Primeiro, é preciso ativar o suporte a esse, alterando a seguinte linha no arquivo `/etc/default/opensips`:
 ```ini
 RUN_OPENSIPS=yes
@@ -76,3 +76,6 @@ advertised_address=<IP externo>
 loadmodule "nathelper.so"
 modparam("nathelper", "received_avp", "$avp(42)")
 ```
+
+# Visualizar
+Os relatórios dos laboratórios estão publicados em: [https://boidacarapreta.github.io/smu20191](https://boidacarapreta.github.io/smu20191).
